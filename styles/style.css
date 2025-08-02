@@ -3,63 +3,149 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.text-gray{
+
+.text-primary {
+    color: #FF900E;
+}
+
+.text-gray {
     color: #424242;
 }
-.text-light-gray{
+
+.text-light-gray {
     color: #727272;
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.10);
 }
 
+.btn-primary {
+    background: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
 
 /* header styles */
 
 
 
 /* nav bar styels */
-.navbar{
-   justify-content: space-between;
-   align-items: center;
+.navbar {
+    justify-content: space-between;
+    align-items: center;
 }
 
-.brand{
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
-    margin-right: 30px;  
+    margin-right: 30px;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
 }
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* banner related style */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 400;
     font-size: 4rem;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* team style */
+
+.teams {
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-feature {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.feature-title{
+    
+}
+.feature-one {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.feature-two {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feature-three {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
 }
